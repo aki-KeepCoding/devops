@@ -2,14 +2,14 @@
 
 ## URLs
 
-**Práctica 1**
-- [ec2-23-22-4-4.compute-1.amazonaws.com](http://ec2-23-22-4-4.compute-1.amazonaws.com)
-- [projects.akixe.info/nodepop](http://projects.akixe.info/nodepop)
+**Práctica 1: API NODEPOP**
+- Base de urls de API con DNS: **ec2-23-22-4-4.compute-1.amazonaws.com/nodepop/api/v1/**
+- **projects.akixe.info/nodepop/api/v1/**
 - Ejemplo de fichero estático: [ http://projects.akixe.info/nodepop/images/bici.png ](http://projects.akixe.info/nodepop/images/bici.png)
 
-**Práctica 2**
-- [23.22.4.4](http://23.22.4.4)
-- [akixe.info](http://akixe.info)
+**Práctica 2: Página WEB**
+- Con la IP: [23.22.4.4](http://23.22.4.4)
+- Con un dominio personal: [akixe.info](http://akixe.info)
 
 
 ## Sobre la práctica 1
@@ -25,6 +25,9 @@ En body x-www-form-urlencoded
 
 
 El token obtenido se deberia de adjuntar como parámetro en siguientes peticiones al API.
+
+Ejemplo petición GET:
+> projects.akixe.info/nodepop/api/v1/anuncios?token=XXXXXXXXXXXXX
 
 *Nota*: Las url de las imágenes de los anuncios se generan en las respuestas del API son del estilo *127.0.0.1/path/al/recurso*. Claramente es un error y lo corregiré cuando tenga el resultado del módulo DevOps. Por ahora para esta práctica incluyo la url directa a los recursos estáticos tal como se indicaba en el enunciado [ (http://projects.akixe.info/nodepop/images/bici.png) ](http://projects.akixe.info/nodepop/images/bici.png).
 
