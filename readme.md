@@ -40,7 +40,8 @@ Mi idea es  usar esta instancia AWS para montar mi sitio personal y por eso he u
 La arquitectura que quiero montar es la siguiente:
 - **akixe.info**: página de portada con enlaces a diferente páginas personales (github, linkedin...) y modos de contacto.
 - **blog.akixe.info**: Mi blog oficial. Todavía no operativo.
-- **projects.akixe.info/_[nombre de proyecto]_**: Será como una especie de portfolio donde pretendo ir colgando distintos proyectos que me interese destacar.
+- **projects.akixe.info**: Será como una especie de portfolio donde pretendo ir colgando distintos proyectos que me interese destacar.
+- **projects.akixe.info/_[nombre de proyecto]_**: Colgará el proyecto operativo. Como ejemplo este caso: projects.akixe.info/nodepop/. 
 
 
 Para el blog y la página de portada usaré [Jekyll](https://jekyllrb.com/), un generador de sitios estático. De hecho la página estática de la práctica 2 ha sido generada con esta herramienta y un *"theme"* descargado de [JekyllThemes.org](http://jekyllthemes.org/)
