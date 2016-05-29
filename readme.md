@@ -45,3 +45,63 @@ La arquitectura que quiero montar es la siguiente:
 
 Para el blog y la página de portada usaré [Jekyll](https://jekyllrb.com/), un generador de sitios estático. De hecho la página estática de la práctica 2 ha sido generada con esta herramienta y un *"theme"* descargado de [JekyllThemes.org](http://jekyllthemes.org/)
 
+## Configuración NGINX
+
+**sites-available/akixe.info:**
+
+```txt
+server {
+    listen 80 default_server;
+    listen [::]:80 default_server ipv6only=on;
+
+    root /var/www/akixe.info;
+    index index.html index.htm;
+
+    # Make site accessible from http://localhost/
+    server_name localhost;
+
+    location / {
+        # First attempt to serve request as file, then
+        # as directory, then fall back to displaying a 404.
+        try_files $uri $uri/ =404;
+        # Uncomment to enable naxsi on this location
+        # include /etc/nginx/naxsi.rules
+    }
+
+}
+```
+
+
+**sites-available/projects.akixe.info**
+
+```txt
+server {
+    listen 80;
+    listen [::]:80;
+
+    root /var/www/projects;
+    index index.html index.htm;
+
+    server_name projects.akixe.info ec2-23-22-4-4.compute-1.amazonaws.com;
+
+
+    location / {
+        # First attempt to serve request as file, then
+        # as directory, then fall back to displaying a 404.
+        try_files $uri $uri/ =404;
+        # Uncomment to enable naxsi on this location
+        # include /etc/nginx/naxsi.rules
+    }
+    location ~ ^/nodepop/(images/|stylesheets/|js/)(.*) {
+        alias /var/www/projects/nodepop/public/$1/$2;
+        access_log off;
+        expires max;
+        add_header X-Owner @akixeOtegi;
+    }
+    location /nodepop/ {
+        proxy_pass http://127.0.0.1:3000/;
+        proxy_redirect off;
+    }
+}
+```
+
