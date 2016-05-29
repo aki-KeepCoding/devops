@@ -2,17 +2,17 @@
 
 ## URLs
 
-** Práctica 1 **
-- [ec2-23-22-4-4.compute-1.amazonaws.com](ec2-23-22-4-4.compute-1.amazonaws.com)
-- [projects.akixe.info/nodepop](projects.akixe.info/nodepop)
-- Fichero estático: [ http://projects.akixe.info/nodepop/images/bici.png ](http://projects.akixe.info/nodepop/images/bici.png)
+**Práctica 1**
+- [ec2-23-22-4-4.compute-1.amazonaws.com](http://ec2-23-22-4-4.compute-1.amazonaws.com)
+- [projects.akixe.info/nodepop](http://projects.akixe.info/nodepop)
+- Ejemplo de fichero estático: [ http://projects.akixe.info/nodepop/images/bici.png ](http://projects.akixe.info/nodepop/images/bici.png)
 
-** Práctica 2 **
-- [23.22.4.4](23.22.4.4)
-- [akixe.info](akixe.info)
+**Práctica 2**
+- [23.22.4.4](http://23.22.4.4)
+- [akixe.info](http://akixe.info)
 
 
-## Sobre práctica 1
+## Sobre la práctica 1
 
 Para realizar peticiones a la API es necesario obtener un token de acceso:
 
@@ -26,11 +26,11 @@ En body x-www-form-urlencoded
 
 El token obtenido se deberia de adjuntar como parámetro en siguientes peticiones al API.
 
-*Nota*: Las url de las imágenes de los anuncios se generan en las respuestas del API son del estilo *127.0.0.1/pathAlRecurso*. Claramente es un error y lo corregiré cuando tenga el resultado del módulo DevOps. Por ahora para esta práctica incluyo la url directa a los recursos estáticos tal como se indicaba en el enunciado [ (http://projects.akixe.info/nodepop/images/bici.png) ](http://projects.akixe.info/nodepop/images/bici.png).
+*Nota*: Las url de las imágenes de los anuncios se generan en las respuestas del API son del estilo *127.0.0.1/path/al/recurso*. Claramente es un error y lo corregiré cuando tenga el resultado del módulo DevOps. Por ahora para esta práctica incluyo la url directa a los recursos estáticos tal como se indicaba en el enunciado [ (http://projects.akixe.info/nodepop/images/bici.png) ](http://projects.akixe.info/nodepop/images/bici.png).
 
-Más info sobre el uso del API en el Readme.md del [repo oficial de la práctica Nodepop](https://github.com/aki-KeepCoding/practica_nodepop).
+Más info sobre el uso del API Nodepop en el Readme.md del [repo oficial de la práctica](https://github.com/aki-KeepCoding/practica_nodepop).
 
-## Notas sobre práctica 2
+## Notas sobre la práctica 2
 
 Mi idea es  usar esta instancia AWS para montar mi sitio personal y por eso he usado una plantilla de mi elección en vez de la que se proponía en el ejercicio original.
 
