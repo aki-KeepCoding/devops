@@ -4,7 +4,7 @@
 
 **Práctica 1: API NODEPOP**
 - Base de urls de API con DNS: **ec2-23-22-4-4.compute-1.amazonaws.com/nodepop/api/v1/**
-- **projects.akixe.info/nodepop/api/v1/**
+- Base con subdominio: **projects.akixe.info/nodepop/api/v1/**
 - Ejemplo de fichero estático: [ http://projects.akixe.info/nodepop/images/bici.png ](http://projects.akixe.info/nodepop/images/bici.png)
 
 **Práctica 2: Página WEB**
